@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Fruit Name</th>
+                <th>Fruit Color</th>
+                <th>Fruit Taste</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>Sweet</td>
+            </tr>
+            <tr>
+                <td>Tomato</td>
+                <td>Orange</td>
+                <td>Sour</td>
+            </tr>
+            <tr>
+                <td>Kiwi</td>
+                <td>Green</td>
+                <td>sweet and tart</td>
+            </tr>
+            <tr>
+                <td>Dragon Fruit</td>
+                <td>White</td>
+                <td>Mildly Sweet</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>List of books to be read</h3>
+    <ul>
+        <li>Never Lie</li>
+        <li>Animal Farm</li>
+        <li>Midnight Library</li>
+        <li>Psycho-Cybernetics</li>
+        <li>To Kill a Mockingbird</li>
+    </ul>
+    <h3>How to make a cup of coffee</h3>
+    <ol>
+        <li>Boil some milk with sugar</li>
+        <li>Add a tsp of instant/finely ground coffee powder to a cup</li>
+        <li>Stir well and drink</li>
+    </ol>
+
+    <form action="" style="border: 1px solid black; padding: 2rem;display: inline-block;">
+        <label for="name">Name</label>
+        <input type="text" minlength="3" max="50" placeholder="Enter your name" id="name" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="vismayasathyan157@gmail.com" placeholder="Enter you email" id="email" required>
+        <p>Select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+        <label for="age">Select your age range</label>
+        <select id="age" name="age" required>
+            <option name="age" value="" disabled selected>age</option>
+            <option name="age" value="18-24">18-24</option>
+            <option name="age" value="25-34">25-34</option>
+            <option name="age" value="35-44">35-44</option>
+        </select>
+        <br><br>
+        <input type="checkbox" name="newslesster" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
