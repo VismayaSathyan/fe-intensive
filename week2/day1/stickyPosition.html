@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+
+    </div>
+    <script>
+        const container = document.getElementById("container")
+        const BLOG_DATA = [
+            {
+                id: 1,
+                title: "The Simple Joy of a Home-Cooked Meal",
+                content: `
+                <p>
+                Clothes are often seen as just fabric stitched together, but in reality, they carry a quiet language of
+                their own. What
+                we wear can reflect our mood, our confidence, and even the story of where we come from.
+                </p>
+
+                <p>
+                    Think about your favorite outfit — the one you reach for when you want to feel good. It's probably not
+                    the most
+                    expensive item in your closet. It's the one that fits just right, feels comfortable, and makes you feel
+                    like yourself.
+                </p>
+
+                <p>
+                    Fashion trends come and go, but personal style is something deeper. It's shaped by culture, comfort, and
+                    the little
+                    choices we make every morning when we decide how to present ourselves to the world. A simple cotton
+                    shirt can feel more
+                    special than a designer piece if it holds a memory or feels like "you."
+                </p>
+
+                <p>
+                    There's also a growing appreciation for mindful dressing — choosing quality over quantity, comfort over
+                    trend, and
+                    pieces that last rather than fade after one season. It's a quiet shift from filling closets to building
+                    a wardrobe that
+                    truly fits our lives.
+                </p>
+
+                <p>
+                    At the end of the day, clothes aren't just about looking good — they're about feeling like the best
+                    version of yourself,
+                    one outfit at a time.
+                </p>
+            `,
+                imageURL: "https://images.unsplash.com/photo-1719726746640-8488555559fd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                id: 2,
+                title: "Chasing Flavor: Why Street Food Tells the Best Stories",
+                content: `
+                <p>
+                    There's a certain kind of honesty in street food. No fancy plating, no dim lighting, no menu with descriptions in three languages — just a sizzling pan, a good recipe passed down through generations, and someone who's made the same dish a thousand times over.
+                </p>
+                <p>
+                    Walk through any night market and you'll notice the same thing: people don't just eat street food, they experience it. The smoke rising off the grill, the clatter of a wok, the smell of spices hitting hot oil — it's a full sensory event before you even take the first bite.
+                </p>
+                <p>
+                    What makes street food special isn't the price tag (though that helps). It's the closeness. You're standing right where your food is being made. You can ask the vendor a question, watch the technique, maybe even get a tip on how they season it just right. That kind of transparency is rare in a world of packaged, processed meals.
+                </p>
+                <p>
+                    Every city has its signature: tacos in Mexico City, banh mi in Hanoi, chaat in Mumbai, kebabs in Istanbul. These aren't just snacks — they're edible history, shaped by trade routes, migration, and generations of home cooks turning necessity into art.
+                </p>
+                <p>
+                    So next time you travel, skip the hotel breakfast buffet. Follow the smoke, follow the crowd, and order whatever the regulars are having. That's usually where the real story is.
+                </p>
+                `,
+                imageURL: "",
+            },
+            {
+                id: 3,
+                title: "What We Wear Says More Than We Think",
+                content: `
+                <p>
+                    Clothes are often seen as just fabric stitched together, but in reality, they carry a quiet language of their own. What we wear can reflect our mood, our confidence, and even the story of where we come from.
+                </p>
+
+                <p>
+                    Think about your favorite outfit — the one you reach for when you want to feel good. It's probably not the most expensive item in your closet. It's the one that fits just right, feels comfortable, and makes you feel like yourself.
+                </p>
+
+                <p>
+                    Fashion trends come and go, but personal style is something deeper. It's shaped by culture, comfort, and the little choices we make every morning when we decide how to present ourselves to the world. A simple cotton shirt can feel more special than a designer piece if it holds a memory or feels like "you."
+                </p>
+
+                <p>
+                    There's also a growing appreciation for mindful dressing — choosing quality over quantity, comfort over trend, and pieces that last rather than fade after one season. It's a quiet shift from filling closets to building a wardrobe that truly fits our lives.
+                </p>
+
+                <p>
+                    At the end of the day, clothes aren't just about looking good — they're about feeling like the best version of yourself, one outfit at a time.
+                </p>
+                `,
+                imageURL: "https://plus.unsplash.com/premium_photo-1726843669720-46319c0e2326?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                id: 4,
+                title: "Building a Wardrobe That Actually Works for You",
+                content: `
+                <p>
+                    Most of us have stood in front of a closet full of clothes and still felt like we had "nothing to wear." It's a strange contradiction — more clothes, less clarity. The problem usually isn't quantity. It's that most wardrobes are built from impulse buys instead of intention.
+                </p>
+                <p>
+                    A wardrobe that actually works starts with knowing your own patterns. What do you reach for on a normal Tuesday? What sits untouched in the back of the closet for a year? That honest audit tells you more about your real style than any trend report ever could.
+                </p>
+                <p>
+                    From there, the goal isn't to own less — it's to own better. A few well-made basics that fit properly will get more wear than a dozen trendy pieces bought on a whim. Neutral colors, solid fabrics, and simple cuts tend to age well and pair easily with almost anything else you own.
+                </p>
+                <p>
+                    It also helps to think in outfits, not individual pieces. Before buying something new, ask: what will I wear this with? If the answer isn't clear, it's probably going to end up as one of those "nothing to wear" items, taking up space without adding value.
+                </p>
+                <p>
+                    In the end, personal style isn't about having the most clothes — it's about having the right ones. A wardrobe that reflects who you are, fits your life, and makes getting dressed feel easy instead of exhausting.
+                </p>
+                `,
+                imageURL: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+        ]
+
+        const appendData = BLOG_DATA.map((blog) => {
+            return `
+            <div key="${blog.id}">
+             <header class="sticky-blog-header">
+                <h1 class="sticky-blog-title">${blog.title}</h1>
+            </header>
+            <img class="sticky-blog-img" src="${blog.imageURL}" alt="blog image">
+            <section class="sticky-blog-section">
+                ${blog.content}
+            </section>
+            <div>
+            `;
+        }).join('');
+
+        container.innerHTML = appendData;
+
+    </script>
+</body>
+
+</html>
