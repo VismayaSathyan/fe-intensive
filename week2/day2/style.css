@@ -42,6 +42,30 @@ img {
 .container {
   padding: 20px;
   margin: auto;
+  display: flex;
+  gap: 30px;
+}
+.menu-icons {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.menu-icons-last-section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menu-icons-mid-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.page-content {
+  flex-grow: 1;
 }
 .top-section {
   margin: 0 auto;
@@ -50,7 +74,7 @@ img {
 }
 .top-section-content-box {
   padding: 25px 0 0 0;
-  max-width: 680px;
+  max-width: 700px;
   width: 100%;
 }
 .profile {
@@ -79,10 +103,11 @@ img {
   font-weight: 700;
   margin: 0;
   margin-right: 0.3rem;
+  cursor: pointer;
 }
 .verified > span {
   margin-bottom: 8px;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
 .sub-title {
@@ -95,6 +120,10 @@ img {
   gap: 1rem;
   display: flex;
   align-items: center;
+}
+
+.analytics > span:nth-last-child(-n + 2) {
+  cursor: pointer;
 }
 
 .about-page {
@@ -117,9 +146,13 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #85a1ff;
   font-size: 14px;
   font-weight: 600;
+}
+
+.help-link > a {
+  text-decoration: none;
+  color: #85a1ff;
 }
 
 .thread-link {
@@ -142,6 +175,10 @@ img {
   align-items: center;
   margin: 12px 0;
   cursor: pointer;
+}
+
+.followers-pic > span {
+  font-size: 14px;
 }
 
 .followers-pic > img:hover {
@@ -173,7 +210,14 @@ p {
 .action-btns > button:hover {
   opacity: 0.9;
 }
-
+.action-btns > button:first-child {
+  background: #4a5df9;
+  color: white;
+}
+.action-btns > button:nth-last-child(-n + 2) {
+  background: rgba(43, 48, 54);
+  color: white;
+}
 .action-btns > :last-child {
   padding: 8px;
   font-size: 0.85rem;
@@ -186,6 +230,7 @@ p {
   margin-top: 50px;
   width: 74px;
   text-align: center;
+  cursor: pointer;
 }
 .highlights-pic {
   border-radius: 50%;
@@ -210,14 +255,18 @@ p {
 .sections > span {
   padding: 8px 20px;
   opacity: 0.6;
+  cursor: pointer;
 }
 .sections > span:first-child {
   border-bottom: 2px solid white;
   opacity: 1;
 }
 .content-container {
-  margin: 0 auto;
   max-width: 1050px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 .card {
   display: flex;
@@ -225,6 +274,7 @@ p {
   border-radius: 8px;
   overflow: hidden;
   flex-wrap: wrap;
+  justify-content: start;
 }
 .card > div {
   max-width: 261px;
@@ -260,6 +310,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  cursor: pointer;
 }
 .message-btn-icon {
   width: 20px;
