@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+body,
+html {
+  background-color: #000;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+}
+
+.section-one {
+  position: relative;
+  overflow: clip;
+}
+.tint {
+  background: #00000047;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-one > img {
+  width: 100%;
+  transform: scale(1.2);
+  object-fit: contain;
+}
+.nav {
+  position: absolute;
+  width: 990px;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  max-width: 150px;
+}
+.nav-btns {
+  display: flex;
+  gap: 20px;
+}
+.nav-btns > button {
+  border-radius: 4px;
+}
+.lang-btn {
+  padding: 6px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #494646;
+  display: flex;
+}
+.lang-btn > svg {
+  width: 30px;
+  color: white;
+}
+.sign-in-btn {
+  padding: 6px 20px;
+  background: red;
+  color: white;
+  border: none;
+}
+.title-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  font-size: 42px;
+  margin-bottom: 0.25em;
+}
+.sub-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 0.5em;
+}
+.desc {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+.content-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.content-input {
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 6px;
+  background-color: #000000a3;
+  border: 1px solid #323030;
+}
+.content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+}
+.mt {
+  margin-top: 7px;
+}
+.section-two {
+  border-top: 5px solid #514f4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  padding: 50px 50px;
+}
+.content-text > h1 {
+  font-size: 48px;
+  margin-bottom: 0.25em;
+}
+.content-text > p {
+  font-size: 24px;
+  max-width: 420px;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.asset-container {
+  width: 100%;
+  flex-grow: 1;
+}
+.asset-layer {
+  position: relative;
+}
+.tv-layer {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+.video-layer {
+  position: absolute;
+  width: 73.15%;
+  object-fit: contain;
+  top: 20.5%;
+  left: 13%;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.section-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #514f4f;
+  padding: 8rem 2rem;
+}
+
+.download-title {
+  font-size: 48px;
+  margin-bottom: 0.25em;
+  max-width: 450px;
+}
+.download-desc {
+  font-size: 24px;
+  max-width: 450px;
+}
+
+.section-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #514f4f;
+  padding: 8rem 2rem;
+  gap: 20px;
+}
+.asset-section {
+  position: relative;
+}
+.sec-four-img {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+}
+
+.sec-four-video {
+  position: absolute;
+  left: 100px;
+  top: 45px;
+  width: 63%;
+}
+
+.section-four-text-content > h2 {
+  font-size: 48px;
+  margin-bottom: 0.25em;
+}
+.section-four-text-content > p {
+  max-width: 450px;
+  font-size: 24px;
+}
+.sec-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #514f4f;
+  padding: 8rem 2rem;
+  gap: 20px;
+}
+
+.img-content-5 > img {
+  width: 100%;
+}
+
+.content-sec-5 > h2 {
+  font-size: 48px;
+  margin-bottom: 0.25em;
+  max-width: 450px;
+}
+
+.content-sec-5 > p {
+  max-width: 450px;
+  font-size: 24px;
+}
+
+.sec-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #514f4f;
+  padding: 4rem 2rem;
+}
+.faq {
+  width: 800px;
+}
+.faq > h2 {
+  font-size: 48px;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+.questions > button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  background: #2f2f2f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.questions > button:hover {
+  background: #535353;
+}
+
+.questions > button > span {
+  float: right;
+}
